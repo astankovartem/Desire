@@ -2,6 +2,12 @@
     .newCollection__img{
         margin: 0 auto 30px auto;
     }
+    .aboutPercent__img{
+        margin-left: 0;
+    }
+    .partners__img{
+        margin: 0 auto;
+    }
 }
 
 @media(max-width: 1343px){
@@ -46,6 +52,18 @@
     }
     .blog__item{
         margin: 0 auto auto auto;
+    }
+    .aboutPercent{
+        flex-direction: column;
+        background: url(../images/main_slider.jpg) no-repeat;
+        background-size:cover;
+        padding: 30px 10px 0 10px;
+    }
+    .aboutPercent__img{
+        width: fit-content;
+        order: 1;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 }
 
@@ -92,17 +110,32 @@
         width: 100%;
         margin: 0 auto 10px auto;
     }
+    .gallery__block1{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .gallery__block2{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
     .gallery__items{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }
-    .gallery__link:first-child{
+    .gallery__link1{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .gallery__link2{
         grid-column: span 1;
         grid-row: span 1;
     }
     .footer__button{
         max-width: 368px;
         width: 100%;
+    }
+    .aboutText__content{
+        padding: 0;
     }
 }
 
@@ -148,5 +181,8 @@
     .blog__subtitle{
         font-size: 20px;
         line-height: 28px;
+    }
+    .aboutIntro__title{
+        font-size: 50px;
     }
 }
