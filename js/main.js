@@ -24,7 +24,55 @@ $(function () {
         autoplay: true,
         
     })
+    $('.img__slider').slick({
+        arrows: true,
+        nextArrow: '<button type="button" class="slick-next"><img src="images/next.svg" alt="back"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="images/back.svg" alt="back"></button>',
+    })
     let mixer = mixitup('.gallery');
     mixer.filter('.bedroom');
 
+})
+$('.contact-slider__content').slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 10,
+    slidesToScroll: 10,
+    responsive: [
+        {
+            breakpoint: 1700,
+            settings: {
+                slidesToShow: 8,
+                slidesToScroll: 8,
+            }
+        },
+        {
+            breakpoint: 1500,
+            settings: {
+                slidesToShow: 6,
+                slidesToScroll: 6,
+            }
+        },
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+            }
+        },
+        {
+            breakpoint: 650,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 400,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+    ]
 })
